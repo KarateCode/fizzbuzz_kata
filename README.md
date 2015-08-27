@@ -27,7 +27,7 @@ To create the database table for these katas, you'll need to run the script:
 
 `ruby create_table.rb`
 
-For this to work, the script assumes that you have a MySQL installed on your local machine with a database of 'fizzbuzz' already created.  Once the schema has been created, you can run either of the following scripts:
+For this to work, the script assumes that you have a MySQL instance installed on your local machine with a database of 'fizzbuzz' already created.  Once the schema has been created, you can run either of the following scripts:
 
 ```
 ruby database_fizzbuzz.rb

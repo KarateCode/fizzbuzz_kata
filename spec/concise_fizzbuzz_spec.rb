@@ -31,7 +31,7 @@ RSpec.describe Concise do
 
 	describe "Benchmark", :performance do
 		it "should be fast" do
-			puts "IfBlock 1,000,000 rows: #{Benchmark.realtime{
+			puts "Concise 1,000,000 rows: #{Benchmark.realtime{
 				Concise.fizzbuzz(1000000)
 			}}"
 		end
