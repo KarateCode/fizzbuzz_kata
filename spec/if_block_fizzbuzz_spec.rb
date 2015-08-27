@@ -1,4 +1,4 @@
-require './if_block_fizzbuzz'
+require './lib/if_block'
 
 RSpec.describe IfBlock do
 	describe "#score" do

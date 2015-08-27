@@ -1,9 +1,10 @@
-require './lib/concise'
+require './spec/spec_helper'
+require './lib/database'
 
-RSpec.describe Concise do
+RSpec.describe Database do
 	describe "#score" do
 		it "returns 'Fizz' for appropriate values" do
-			results = Concise.fizzbuzz
+			results = Database.fizzbuzz(100)
 
 			expect(results[1]).to eq("")
 			expect(results[3]).to eq("Fizz")
@@ -12,14 +13,14 @@ RSpec.describe Concise do
 		end
 
 		it "returns 'Buzz' for appropriate values" do
-			results = Concise.fizzbuzz
+			results = Database.fizzbuzz(100)
 
 			expect(results[5]).to eq("Buzz")
 			expect(results[10]).to eq("Buzz")
 		end
 
 		it "returns 'Buzz' for appropriate values" do
-			results = Concise.fizzbuzz
+			results = Database.fizzbuzz(100)
 
 			expect(results[15]).to eq("FizzBuzz")
 			expect(results[30]).to eq("FizzBuzz")

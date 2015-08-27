@@ -1,4 +1,4 @@
-require './case_block_fizzbuzz'
+require './lib/case_block'
 
 RSpec.describe CaseBlock do
 	describe "#score" do
