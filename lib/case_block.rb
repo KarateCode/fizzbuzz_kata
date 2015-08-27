@@ -1,9 +1,11 @@
+require './row'
+
 module CaseBlock
-	def self.fizzbuzz(verbose=false)
+	def self.fizzbuzz(num, verbose=false)
 		results = []
-		1.upto(100).each do |index|
+		1.upto(num).each do |index|
 			output = ""
-			case 
+			case
 			when index%3==0 && index%5==0
 				output += "FizzBuzz"
 			when index%3==0

@@ -1,7 +1,9 @@
+require './row'
+
 module IfBlock
-	def self.fizzbuzz(verbose=false)
+	def self.fizzbuzz(num, verbose=false)
 		results = []
-		(1..100).each do |index|
+		(1..num).each do |index|
 			output = ""
 			if index%3==0 && index%5==0
 				output += "FizzBuzz"

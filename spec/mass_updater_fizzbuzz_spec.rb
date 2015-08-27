@@ -2,7 +2,7 @@ require './spec/spec_helper'
 require './lib/mass_updater'
 
 RSpec.describe MassUpdater do
-	describe "#score" do
+	describe "#score", :test do
 		it "returns 'Fizz' for appropriate values" do
 			results = MassUpdater.fizzbuzz(100)
 
@@ -26,6 +26,14 @@ RSpec.describe MassUpdater do
 			expect(results[30]).to eq("FizzBuzz")
 			expect(results[45]).to eq("FizzBuzz")
 			expect(results[60]).to eq("FizzBuzz")
+		end
+	end
+
+	describe "Benchmark", :performance do
+		it "should be fast" do
+			puts "MassUpdater 1,000 rows: #{Benchmark.realtime{
+				MassUpdater.fizzbuzz(1000)
+			}}"
 		end
 	end
 end

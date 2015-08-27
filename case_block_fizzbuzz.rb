@@ -1,3 +1,3 @@
 require './lib/case_block'
 
-CaseBlock.fizzbuzz(true)
+CaseBlock.fizzbuzz(100, true)

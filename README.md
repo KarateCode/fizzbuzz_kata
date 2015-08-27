@@ -11,7 +11,7 @@ cd fizzbuzz_kata
 
 Since this is a simple exercise, I provided three different solutions.  They all have spec written for them.  The test suite can be run with:
 
-`rspec spec`
+`rspec spec --tag test`
 
 If you'd like to run the solutions individually, they can be run with any of the following commands:
 
@@ -33,3 +33,9 @@ For this to work, the script assumes that you have a MySQL installed on your loc
 ruby database_fizzbuzz.rb
 ruby mass_updater_fizzbuzz.rb
 ```
+
+## Run Benchmarks
+
+To see the results of the benchmarking suite, you may run the following command:
+
+`rspec spec --tag performance`

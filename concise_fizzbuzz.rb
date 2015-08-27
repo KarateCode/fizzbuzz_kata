@@ -1,3 +1,3 @@
 require './lib/concise'
 
-Concise.fizzbuzz(true)
+Concise.fizzbuzz(100, true)
